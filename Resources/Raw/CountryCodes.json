@@ -1,0 +1,778 @@
+[
+  {
+    "Id": 1,
+    "CountryCode": "🇦🇨 +247"
+  },
+  {
+    "Id": 2,
+    "CountryCode": "🇦🇩 +376"
+  },
+  {
+    "Id": 3,
+    "CountryCode": "🇦🇪 +971"
+  },
+  {
+    "Id": 4,
+    "CountryCode": "🇦🇫 +93"
+  },
+  {
+    "Id": 5,
+    "CountryCode": "🇦🇬 +1"
+  },
+  {
+    "Id": 6,
+    "CountryCode": "🇦🇮 +1"
+  },
+  {
+    "Id": 7,
+    "CountryCode": "🇦🇱 +355"
+  },
+  {
+    "Id": 8,
+    "CountryCode": "🇦🇲 +374"
+  },
+  {
+    "Id": 9,
+    "CountryCode": "🇦🇴 +244"
+  },
+  {
+    "Id": 10,
+    "CountryCode": "🇦🇶 +672"
+  },
+  {
+    "Id": 11,
+    "CountryCode": "🇦🇷 +54"
+  },
+  {
+    "Id": 12,
+    "CountryCode": "🇦🇸 +1"
+  },
+  {
+    "Id": 13,
+    "CountryCode": "🇦🇹 +43"
+  },
+  {
+    "Id": 14,
+    "CountryCode": "🇦🇺 +61"
+  },
+  {
+    "Id": 15,
+    "CountryCode": "🇦🇼 +297"
+  },
+  {
+    "Id": 16,
+    "CountryCode": "🇦🇽 +358"
+  },
+  {
+    "Id": 17,
+    "CountryCode": "🇦🇿 +994"
+  },
+  {
+    "Id": 18,
+    "CountryCode": "🇧🇦 +387"
+  },
+  {
+    "Id": 19,
+    "CountryCode": "🇧🇧 +1"
+  },
+  {
+    "Id": 20,
+    "CountryCode": "🇧🇩 +880"
+  },
+  {
+    "Id": 21,
+    "CountryCode": "🇧🇪 +32"
+  },
+  {
+    "Id": 22,
+    "CountryCode": "🇧🇫 +226"
+  },
+  {
+    "Id": 23,
+    "CountryCode": "🇧🇬 +359"
+  },
+  {
+    "Id": 24,
+    "CountryCode": "🇧🇭 +973"
+  },
+  {
+    "Id": 25,
+    "CountryCode": "🇧🇮 +257"
+  },
+  {
+    "Id": 26,
+    "CountryCode": "🇧🇯 +229"
+  },
+  {
+    "Id": 27,
+    "CountryCode": "🇧🇱 +590"
+  },
+  {
+    "Id": 28,
+    "CountryCode": "🇧🇲 +1"
+  },
+  {
+    "Id": 29,
+    "CountryCode": "🇧🇳 +673"
+  },
+  {
+    "Id": 30,
+    "CountryCode": "🇧🇴 +591"
+  },
+  {
+    "Id": 31,
+    "CountryCode": "🇧🇶 +599"
+  },
+  {
+    "Id": 32,
+    "CountryCode": "🇧🇷 +55"
+  },
+  {
+    "Id": 33,
+    "CountryCode": "🇧🇸 +1"
+  },
+  {
+    "Id": 34,
+    "CountryCode": "🇧🇹 +975"
+  },
+  {
+    "Id": 35,
+    "CountryCode": "🇧🇻 +47"
+  },
+  {
+    "Id": 36,
+    "CountryCode": "🇧🇼 +267"
+  },
+  {
+    "Id": 37,
+    "CountryCode": "🇧🇾 +375"
+  },
+  {
+    "Id": 38,
+    "CountryCode": "🇧🇿 +501"
+  },
+  {
+    "Id": 39,
+    "CountryCode": "🇨🇦 +1"
+  },
+  {
+    "Id": 40,
+    "CountryCode": "🇨🇨 +61"
+  },
+  {
+    "Id": 41,
+    "CountryCode": "🇨🇩 +243"
+  },
+  {
+    "Id": 42,
+    "CountryCode": "🇨🇫 +236"
+  },
+  {
+    "Id": 43,
+    "CountryCode": "🇨🇬 +242"
+  },
+  {
+    "Id": 44,
+    "CountryCode": "🇨🇭 +41"
+  },
+  {
+    "Id": 45,
+    "CountryCode": "🇨🇮 +225"
+  },
+  {
+    "Id": 46,
+    "CountryCode": "🇨🇰 +682"
+  },
+  {
+    "Id": 47,
+    "CountryCode": "🇨🇱 +56"
+  },
+  {
+    "Id": 48,
+    "CountryCode": "🇨🇲 +237"
+  },
+  {
+    "Id": 49,
+    "CountryCode": "🇨🇳 +86"
+  },
+  {
+    "Id": 50,
+    "CountryCode": "🇨🇴 +57"
+  },
+  {
+    "Id": 51,
+    "CountryCode": "🇨🇵 +382"
+  },
+  {
+    "Id": 52,
+    "CountryCode": "🇨🇷 +506"
+  },
+  {
+    "Id": 53,
+    "CountryCode": "🇨🇺 +53"
+  },
+  {
+    "Id": 54,
+    "CountryCode": "🇨🇻 +238"
+  },
+  {
+    "Id": 55,
+    "CountryCode": "🇨🇼 +599"
+  },
+  {
+    "Id": 56,
+    "CountryCode": "🇨🇽 +61"
+  },
+  {
+    "Id": 57,
+    "CountryCode": "🇨🇾 +357"
+  },
+  {
+    "Id": 58,
+    "CountryCode": "🇨🇿 +420"
+  },
+  {
+    "Id": 59,
+    "CountryCode": "🇩🇩 +49"
+  },
+  {
+    "Id": 60,
+    "CountryCode": "🇩🇬 +246"
+  },
+  {
+    "Id": 61,
+    "CountryCode": "🇩🇯 +253"
+  },
+  {
+    "Id": 62,
+    "CountryCode": "🇩🇰 +45"
+  },
+  {
+    "Id": 63,
+    "CountryCode": "🇩🇲 +1"
+  },
+  {
+    "Id": 64,
+    "CountryCode": "🇩🇴 +1"
+  },
+  {
+    "Id": 65,
+    "CountryCode": "🇩🇿 +213"
+  },
+  {
+    "Id": 66,
+    "CountryCode": "🇪🇦 +34"
+  },
+  {
+    "Id": 67,
+    "CountryCode": "🇪🇨 +593"
+  },
+  {
+    "Id": 68,
+    "CountryCode": "🇪🇪 +372"
+  },
+  {
+    "Id": 69,
+    "CountryCode": "🇪🇬 +20"
+  },
+  {
+    "Id": 70,
+    "CountryCode": "🇪🇭 +212"
+  },
+  {
+    "Id": 71,
+    "CountryCode": "🇪🇷 +291"
+  },
+  {
+    "Id": 72,
+    "CountryCode": "🇪🇸 +34"
+  },
+  {
+    "Id": 73,
+    "CountryCode": "🇪🇹 +251"
+  },
+  {
+    "Id": 74,
+    "CountryCode": "🇫🇮 +358"
+  },
+  {
+    "Id": 75,
+    "CountryCode": "🇫🇯 +679"
+  },
+  {
+    "Id": 76,
+    "CountryCode": "🇫🇰 +500"
+  },
+  {
+    "Id": 77,
+    "CountryCode": "🇫🇲 +691"
+  },
+  {
+    "Id": 78,
+    "CountryCode": "🇫🇴 +298"
+  },
+  {
+    "Id": 79,
+    "CountryCode": "🇫🇷 +33"
+  },
+  {
+    "Id": 80,
+    "CountryCode": "🇬🇦 +241"
+  },
+  {
+    "Id": 81,
+    "CountryCode": "🇬🇧 +44"
+  },
+  {
+    "Id": 82,
+    "CountryCode": "🇬🇩 +1"
+  },
+  {
+    "Id": 83,
+    "CountryCode": "🇬🇪 +995"
+  },
+  {
+    "Id": 84,
+    "CountryCode": "🇬🇫 +594"
+  },
+  {
+    "Id": 85,
+    "CountryCode": "🇬🇬 +44"
+  },
+  {
+    "Id": 86,
+    "CountryCode": "🇬🇭 +233"
+  },
+  {
+    "Id": 87,
+    "CountryCode": "🇬🇮 +350"
+  },
+  {
+    "Id": 88,
+    "CountryCode": "🇬🇱 +299"
+  },
+  {
+    "Id": 89,
+    "CountryCode": "🇬🇲 +220"
+  },
+  {
+    "Id": 90,
+    "CountryCode": "🇬🇳 +224"
+  },
+  {
+    "Id": 91,
+    "CountryCode": "🇬🇵 +590"
+  },
+  {
+    "Id": 92,
+    "CountryCode": "🇬🇶 +240"
+  },
+  {
+    "Id": 93,
+    "CountryCode": "🇬🇷 +30"
+  },
+  {
+    "Id": 94,
+    "CountryCode": "🇬🇸 +500"
+  },
+  {
+    "Id": 95,
+    "CountryCode": "🇬🇹 +502"
+  },
+  {
+    "Id": 96,
+    "CountryCode": "🇬🇺 +1"
+  },
+  {
+    "Id": 97,
+    "CountryCode": "🇬🇼 +245"
+  },
+  {
+    "Id": 98,
+    "CountryCode": "🇬🇾 +592"
+  },
+  {
+    "Id": 99,
+    "CountryCode": "🇭🇰 +852"
+  },
+  {
+    "Id": 100,
+    "CountryCode": "🇭🇲 +672"
+  },
+  {
+    "Id": 101,
+    "CountryCode": "🇭🇳 +504"
+  },
+  {
+    "Id": 102,
+    "CountryCode": "🇭🇷 +385"
+  },
+  {
+    "Id": 103,
+    "CountryCode": "🇭🇹 +509"
+  },
+  {
+    "Id": 104,
+    "CountryCode": "🇭🇺 +36"
+  },
+  {
+    "Id": 105,
+    "CountryCode": "🇮🇨 +34"
+  },
+  {
+    "Id": 106,
+    "CountryCode": "🇮🇩 +62"
+  },
+  {
+    "Id": 107,
+    "CountryCode": "🇮🇪 +353"
+  },
+  {
+    "Id": 108,
+    "CountryCode": "🇮🇱 +972"
+  },
+  {
+    "Id": 109,
+    "CountryCode": "🇮🇲 +44"
+  },
+  {
+    "Id": 110,
+    "CountryCode": "🇮🇳 +91"
+  },
+  {
+    "Id": 111,
+    "CountryCode": "🇮🇴 +246"
+  },
+  {
+    "Id": 112,
+    "CountryCode": "🇮🇶 +964"
+  },
+  {
+    "Id": 113,
+    "CountryCode": "🇮🇷 +98"
+  },
+  {
+    "Id": 114,
+    "CountryCode": "🇮🇸 +354"
+  },
+  {
+    "Id": 115,
+    "CountryCode": "🇮🇹 +39"
+  },
+  {
+    "Id": 116,
+    "CountryCode": "🇯🇪 +44"
+  },
+  {
+    "Id": 117,
+    "CountryCode": "🇯🇲 +1"
+  },
+  {
+    "Id": 118,
+    "CountryCode": "🇯🇴 +962"
+  },
+  {
+    "Id": 119,
+    "CountryCode": "🇯🇵 +81"
+  },
+  {
+    "Id": 120,
+    "CountryCode": "🇰🇪 +254"
+  },
+  {
+    "Id": 121,
+    "CountryCode": "🇰🇬 +996"
+  },
+  {
+    "Id": 122,
+    "CountryCode": "🇰🇭 +855"
+  },
+  {
+    "Id": 123,
+    "CountryCode": "🇰🇮 +686"
+  },
+  {
+    "Id": 124,
+    "CountryCode": "🇰🇲 +269"
+  },
+  {
+    "Id": 125,
+    "CountryCode": "🇰🇳 +1"
+  },
+  {
+    "Id": 126,
+    "CountryCode": "🇰🇵 +850"
+  },
+  {
+    "Id": 127,
+    "CountryCode": "🇰🇷 +82"
+  },
+  {
+    "Id": 128,
+    "CountryCode": "🇰🇼 +965"
+  },
+  {
+    "Id": 129,
+    "CountryCode": "🇰🇾 +1"
+  },
+  {
+    "Id": 130,
+    "CountryCode": "🇰🇿 +7"
+  },
+  {
+    "Id": 131,
+    "CountryCode": "🇱🇦 +856"
+  },
+  {
+    "Id": 132,
+    "CountryCode": "🇱🇧 +961"
+  },
+  {
+    "Id": 133,
+    "CountryCode": "🇱🇨 +1"
+  },
+  {
+    "Id": 134,
+    "CountryCode": "🇱🇮 +423"
+  },
+  {
+    "Id": 135,
+    "CountryCode": "🇱🇰 +94"
+  },
+  {
+    "Id": 136,
+    "CountryCode": "🇱🇷 +231"
+  },
+  {
+    "Id": 137,
+    "CountryCode": "🇱🇸 +266"
+  },
+  {
+    "Id": 138,
+    "CountryCode": "🇱🇹 +370"
+  },
+  {
+    "Id": 139,
+    "CountryCode": "🇱🇺 +352"
+  },
+  {
+    "Id": 140,
+    "CountryCode": "🇱🇻 +371"
+  },
+  {
+    "Id": 141,
+    "CountryCode": "🇱🇾 +218"
+  },
+  {
+    "Id": 142,
+    "CountryCode": "🇲🇦 +212"
+  },
+  {
+    "Id": 143,
+    "CountryCode": "🇲🇨 +377"
+  },
+  {
+    "Id": 144,
+    "CountryCode": "🇲🇩 +373"
+  },
+  {
+    "Id": 145,
+    "CountryCode": "🇲🇪 +382"
+  },
+  {
+    "Id": 146,
+    "CountryCode": "🇲🇫 +590"
+  },
+  {
+    "Id": 147,
+    "CountryCode": "🇲🇬 +261"
+  },
+  {
+    "Id": 148,
+    "CountryCode": "🇲🇭 +692"
+  },
+  {
+    "Id": 149,
+    "CountryCode": "🇲🇰 +389"
+  },
+  {
+    "Id": 150,
+    "CountryCode": "🇲🇱 +223"
+  },
+  {
+    "Id": 151,
+    "CountryCode": "🇲🇲 +95"
+  },
+  {
+    "Id": 152,
+    "CountryCode": "🇲🇳 +976"
+  },
+  {
+    "Id": 153,
+    "CountryCode": "🇲🇴 +853"
+  },
+  {
+    "Id": 154,
+    "CountryCode": "🇲🇵 +1"
+  },
+  {
+    "Id": 155,
+    "CountryCode": "🇲🇶 +596"
+  },
+  {
+    "Id": 156,
+    "CountryCode": "🇲🇷 +222"
+  },
+  {
+    "Id": 157,
+    "CountryCode": "🇲🇸 +1"
+  },
+  {
+    "Id": 158,
+    "CountryCode": "🇲🇹 +356"
+  },
+  {
+    "Id": 159,
+    "CountryCode": "🇲🇺 +230"
+  },
+  {
+    "Id": 160,
+    "CountryCode": "🇲🇻 +960"
+  },
+  {
+    "Id": 161,
+    "CountryCode": "🇲🇼 +265"
+  },
+  {
+    "Id": 162,
+    "CountryCode": "🇲🇽 +52"
+  },
+  {
+    "Id": 163,
+    "CountryCode": "🇲🇾 +60"
+  },
+  {
+    "Id": 164,
+    "CountryCode": "🇲🇿 +258"
+  },
+  {
+    "Id": 165,
+    "CountryCode": "🇳🇦 +264"
+  },
+  {
+    "Id": 166,
+    "CountryCode": "🇳🇨 +687"
+  },
+  {
+    "Id": 167,
+    "CountryCode": "🇳🇪 +227"
+  },
+  {
+    "Id": 168,
+    "CountryCode": "🇳🇫 +672"
+  },
+  {
+    "Id": 169,
+    "CountryCode": "🇳🇬 +234"
+  },
+  {
+    "Id": 170,
+    "CountryCode": "🇳🇮 +505"
+  },
+  {
+    "Id": 171,
+    "CountryCode": "🇳🇱 +31"
+  },
+  {
+    "Id": 172,
+    "CountryCode": "🇳🇴 +47"
+  },
+  {
+    "Id": 173,
+    "CountryCode": "🇳🇵 +977"
+  },
+  {
+    "Id": 174,
+    "CountryCode": "🇳🇷 +674"
+  },
+  {
+    "Id": 175,
+    "CountryCode": "🇳🇺 +683"
+  },
+  {
+    "Id": 176,
+    "CountryCode": "🇳🇿 +64"
+  },
+  {
+    "Id": 177,
+    "CountryCode": "🇴🇲 +968"
+  },
+  {
+    "Id": 178,
+    "CountryCode": "🇵🇦 +507"
+  },
+  {
+    "Id": 179,
+    "CountryCode": "🇵🇪 +51"
+  },
+  {
+    "Id": 180,
+    "CountryCode": "🇵🇫 +689"
+  },
+  {
+    "Id": 181,
+    "CountryCode": "🇵🇬 +675"
+  },
+  {
+    "Id": 182,
+    "CountryCode": "🇵🇭 +63"
+  },
+  {
+    "Id": 183,
+    "CountryCode": "🇵🇰 +92"
+  },
+  {
+    "Id": 184,
+    "CountryCode": "🇵🇱 +48"
+  },
+  {
+    "Id": 185,
+    "CountryCode": "🇵🇲 +508"
+  },
+  {
+    "Id": 186,
+    "CountryCode": "🇵🇳 +872"
+  },
+  {
+    "Id": 187,
+    "CountryCode": "🇵🇷 +1"
+  },
+  {
+    "Id": 188,
+    "CountryCode": "🇵🇸 +970"
+  },
+  {
+    "Id": 189,
+    "CountryCode": "🇵🇹 +351"
+  },
+  {
+    "Id": 190,
+    "CountryCode": "🇵🇼 +680"
+  },
+  {
+    "Id": 191,
+    "CountryCode": "🇵🇾 +595"
+  },
+  {
+    "Id": 192,
+    "CountryCode": "🇶🇦 +974"
+  },
+  {
+    "Id": 193,
+    "CountryCode": "🇷🇪 +262"
+  },
+  {
+    "Id": 194,
+    "CountryCode": "🇷🇴 +40"
+  }
+]

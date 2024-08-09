@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Negocios.Views.LoginView"
+             xmlns:viewmodel="clr-namespace:Negocios.ViewModels"
+             xmlns:converters="clr-namespace:Negocios.Converters"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             Shell.TabBarIsVisible="False"
+             Shell.NavBarIsVisible="False"
+             x:DataType="viewmodel:LoginViewModel"
+             Background="White">
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+            <Frame CornerRadius="0" HeightRequest="330" Background="Black">
+                <ImageButton Source="splash.png" CornerRadius="103" WidthRequest="200"
+             HeightRequest="200" Margin="0,0,0,40" Grid.Column="0" Grid.Row="0"/>
+            </Frame>
+        </Grid>
+        <Frame Margin="30,-50,30,0" HeightRequest="370" BackgroundColor="Red" Grid.Column="0" Grid.Row="0"
+           CornerRadius="20" Background="White" HasShadow="True">
+            <VerticalStackLayout>
+                <Label Text="!Bienvenido¡" TextColor="Black" HorizontalOptions="Center"
+               FontAttributes="Bold" FontFamily="Lemon" FontSize="24" Margin="0,20,0,0"/>
+                <Entry Placeholder="Usuario" FontSize="16" FontAttributes="Bold" PlaceholderColor="#7E7171"
+                   Text="{Binding Usuario, Converter={converters:NoSpacesConverter}, Mode=TwoWay}"
+                   Margin="30,30,30,0" x:Name="EntryUsuario" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"/>
+                <Entry Placeholder="Contraseña" FontSize="16" FontAttributes="Bold" PlaceholderColor="#7E7171" IsPassword="True"
+                   Margin="30,30,30,0" x:Name="EntryPassword" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"
+                   Text="{Binding Password, Mode=TwoWay}"/>
+                <Button Text="Iniciar Sesión" WidthRequest="220" Background="Black" x:Name="BtnLogin"
+                    TextColor="White" FontAttributes="Bold" Margin="30,20,30,0" Command="{Binding LoginIntentCommand}"/>
+                <Button Text="¿Olvidaste tu contraseña?" TextColor="Black" Margin="0,10,0,0" x:Name="BtnRecover"
+                    BackgroundColor="Transparent" HeightRequest="40" Background="Transparent"/>
+                <sfPopup:SfPopup x:Name="alert" IsOpen="{Binding IsOpen}" AcceptCommand="{Binding AcceptSuccessCommand}" 
+                                 AppearanceMode="OneButton" HeaderTitle="{Binding Title}" Message="{Binding Message}"
+                                 Style="{StaticResource PopupGeneral}" FlowDirection="MatchParent"/>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

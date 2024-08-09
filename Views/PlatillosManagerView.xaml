@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Negocios.Views.PlatillosManagerView"
+             xmlns:vm="clr-namespace:Negocios.ViewModels"
+             xmlns:models="clr-namespace:Negocios.Models"
+             xmlns:converters="clr-namespace:Negocios.Converters"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             x:DataType="vm:PlatillosManagerViewModel"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="1">
+                <VerticalStackLayout>
+                    <Label Text="Productos" TextColor="Black" FontFamily="Lemon"
+                        FontSize="24" FontAttributes="Bold" Margin="0,15,0,0"/>
+                    <CollectionView x:Name="productsCollection" ItemsSource="{Binding Productos}">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:PlatillosAttributes">
+                                <Frame HasShadow="True" Padding="5,5,3,5" BorderColor="#A09A9A">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="65*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <VerticalStackLayout Grid.Column="0" x:Name="Container">
+                                            <Frame BackgroundColor="Transparent" WidthRequest="340" HeightRequest="50" Padding="0,0,0,0"
+                                            HorizontalOptions="Start" Margin="5,0,50,0">
+                                                <Entry Text="{Binding Nombre, Mode=TwoWay}" FontSize="20" TextColor="Black" FontFamily="Acme"
+                                             WidthRequest="340" BackgroundColor="#ECE8E8"/>
+                                            </Frame>
+                                            <Frame  Margin="-85,5,70,5" HasShadow="True" BorderColor="Transparent" BackgroundColor="#ECE8E8"
+                                             HeightRequest="120" WidthRequest="190" Padding="5,5,5,5">
+                                                <Editor Text="{Binding Descripcion, Mode=TwoWay}" FontSize="16" TextColor="Black" FontFamily="Acme" AutoSize="TextChanges"
+                                                 x:Name="EntryDescripcion" WidthRequest="190" Margin="0"/>
+                                            </Frame>
+                                            <HorizontalStackLayout>
+                                                <Frame WidthRequest="110" HorizontalOptions="Start" Margin="5,0,0,0" HeightRequest="50" Padding="0"
+                                                BackgroundColor="Transparent" x:Name="frameFather">
+                                                    <editors:SfNumericEntry CustomFormat="C2" TextColor="Black" BackgroundColor="#ECE8E8"
+                                                     WidthRequest="110" Value="{Binding Precio, Mode=TwoWay}" FontFamily="Acme" Margin="0,0,0,0" FontSize="18"
+                                                     x:Name="syncNePrecio" ValueChangeMode="OnKeyFocus"/>
+                                                </Frame>
+                                                <Button Text="Actualizar" WidthRequest="115" Margin="5,0,5,0" FontAttributes="Bold" FontFamily="Acme"
+                                                CharacterSpacing="3" Background="#15BBD9" FontSize="Small" Command="{Binding Source={RelativeSource AncestorType={
+                                                    x:Type vm:PlatillosManagerViewModel}}, Path=UpdateCommand}" CommandParameter="{Binding .}"/>
+                                                <Button Text="Eliminar" WidthRequest="110" FontAttributes="Bold" FontFamily="Acme"
+                                                CharacterSpacing="3" Background="#E2483A" FontSize="Small"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:PlatillosManagerViewModel}},
+                                                    Path=DeleteCommand}" CommandParameter="{Binding .}"/>
+                                            </HorizontalStackLayout>
+                                        </VerticalStackLayout>
+                                        <ImageButton Source="{Binding Imagen, Converter={converters:ImageArrayToImageSourceProductsConverter}, Mode=TwoWay}" WidthRequest="140" 
+                                        HeightRequest="120" CornerRadius="15" HorizontalOptions="End" Grid.Column="1" Command="{Binding Source={
+                                            RelativeSource AncestorType={x:Type vm:PlatillosManagerViewModel}}, Path=GetImageCommand}" CommandParameter="{Binding}"
+                                        VerticalOptions="Start" Margin="0,56,5,0" x:Name="ImgProducto" Aspect="AspectFill"/>
+                                    </Grid>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <sfPopup:SfPopup x:Name="PoputConfirm" IsOpen="{Binding IsOpenConfirm}" AcceptCommand="{Binding AcceptDeleteCommand}"
+                                     HeaderTitle="{Binding Title}" Message="{Binding Message}"
+                                     DeclineCommand="{Binding DeclineDeleteCommand}" Style="{StaticResource PopupGeneral}"
+                                     AppearanceMode="TwoButton"/>
+                    <sfPopup:SfPopup x:Name="PoputError" IsOpen="{Binding IsOpenError}" HeaderTitle="{Binding Title}"
+                                     Message="{Binding Message}" AppearanceMode="OneButton" Style="{StaticResource PopupGeneral}"
+                                     AcceptCommand="{Binding CloseMessageErrorCommand}"/>
+                    <sfPopup:SfPopup x:Name="PoputExito" IsOpen="{Binding IsOpen}" AcceptCommand="{Binding CloseMessageExitoCommand}"
+                                     ShowFooter="True" HeaderTitle="{Binding Title}" Message="{Binding Message}" AppearanceMode="OneButton"
+                                     Style="{StaticResource PopupGeneral}"/>
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

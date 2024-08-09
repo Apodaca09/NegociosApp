@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Negocios.Views.RegisterView"
+             xmlns:viewmodel="clr-namespace:Negocios.ViewModels"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+             x:DataType="viewmodel:RegisterViewModel"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             xmlns:converters="clr-namespace:Negocios.Converters"
+             Background="White">
+    <VerticalStackLayout>
+        <Frame HeightRequest="250" BackgroundColor="Black" CornerRadius="0">
+            <ImageButton Source="splash.png" CornerRadius="80" WidthRequest="160"
+            HeightRequest="160" Margin="0,0,0,90" Grid.Column="0" Grid.Row="0"/>
+        </Frame>
+        <Frame Margin="20,-80,20,0" HeightRequest="480" CornerRadius="15" HasShadow="True">
+            <VerticalStackLayout>
+                <Label Text="Registro" TextColor="Black" FontSize="24" FontAttributes="Bold"
+FontFamily="Lemon" HorizontalOptions="Center"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton  Grid.Column="0" Grid.Row="0" Margin="0,-280,0,0" Aspect="AspectFit"
+                                 WidthRequest="85" HeightRequest="85" Command="{Binding GetImageCommand}"
+                                 x:Name="BtnAddLogo" Source="{Binding ImagenByte, Converter={converters:ImageArrayToImageSourceNegociosConverter}}"/>
+                    <Label Text="Logo" Grid.Column="0" Grid.Row="0" TextColor="Black" FontFamily="Lemon"
+                           Margin="50,85,0,0"/>
+                    <Image Source="password.png" WidthRequest="40" HeightRequest="40" Margin="30,-110,0,0"/>
+                    <editors:SfComboBox HeightRequest="40" Margin="0,70,0,0" WidthRequest="120" x:Name="Ladas" IsEditable="True" Text="{Binding Lada, Mode=TwoWay}"
+                           TextSearchMode="Contains" IsFilteringEnabled="True" DisplayMemberPath="CountryCode" SelectedValuePath="CountryCode" NoResultsFoundText="Not Found"
+                           TextMemberPath="CountryCode" ItemsSource="{Binding CountriesCodes}" SelectionMode="Single" Placeholder="Lada" PlaceholderColor="Black"
+                           FontFamily="Segoe UI Emoji" HorizontalTextAlignment="Center" IsClearButtonVisible="False"/>
+                    <Image Source="owner.png" WidthRequest="40" HeightRequest="40" Margin="30,150,0,0"/>
+                    <Image Source="direccion.png" WidthRequest="40" HeightRequest="40" Margin="30,230,0,0"/>
+                    <Entry Grid.Column="1" Grid.Row="0" HeightRequest="40"  x:Name="EntryUsuario"
+                           Placeholder="Usuario" PlaceholderColor="#7E7171" Margin="0,-220,0,0"
+                           FontAttributes="Bold" FontSize="16" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"
+                           Text="{Binding Usuario, Converter={converters:NoSpacesConverter}, Mode=TwoWay}"/>
+                    <Entry Grid.Column="1" Grid.Row="0" HeightRequest="40" Margin="0,-120,0,0" x:Name="EntryPassword"
+                           Placeholder="Contraseña" PlaceholderColor="#7E7171" FontSize="16" TextColor="Black" FontFamily="Acme" 
+                           CharacterSpacing="3" Text="{Binding Contrasena, Mode=TwoWay}"/>
+                    <Entry Grid.Column="1" Grid.Row="0" HeightRequest="40" Margin="0,-10,0,0" x:Name="EntryNegocio" Text="{Binding Negocio, Mode=TwoWay}"
+                           Placeholder="Negocio" PlaceholderColor="#7E7171" FontSize="16" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"/>
+                    <Entry Grid.Column="1" Grid.Row="0" HeightRequest="40" Margin="0,80,0,0" x:Name="EntryTelefono" Text="{Binding Telefono,Mode=TwoWay}"
+                           Placeholder="Teléfono" PlaceholderColor="#7E7171" FontSize="16" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"/>
+                    <Entry Grid.Column="1" Grid.Row="0" HeightRequest="40" Margin="0,160,0,0" x:Name="EntryOwner" Text="{Binding Owner, Mode=TwoWay}"
+                           Placeholder="Dueño/a" PlaceholderColor="#7E7171" FontSize="16" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"/>
+                    <Entry Grid.Column="1" Grid.Row="0" HeightRequest="40" Margin="0,240,0,0" x:Name="EntryDireccion" Text="{Binding Direccion, Mode=TwoWay}"
+                           Placeholder="Dirección" PlaceholderColor="#7E7171" FontSize="16" TextColor="Black" FontFamily="Acme" CharacterSpacing="3"/>
+                    <Button Text="Registrar" Background="Black" TextColor="White" HeightRequest="40"
+                                 Grid.Column="0"  WidthRequest="100" Margin="40,340,0,0" x:Name="BtnRegistrar"
+                                 Command="{Binding RegisterCommand}"/>
+                    <Button Text="Cancelar" Background="Black" TextColor="White" HeightRequest="40" x:Name="BtnCancelar"
+                           Command="{Binding GoToBackCommand}"
+                           Grid.Column="1" WidthRequest="100" Margin="30,340,0,0" HorizontalOptions="Start"/>
+                </Grid>
+            </VerticalStackLayout>
+        </Frame>
+        <sfPopup:SfPopup x:Name="alert" Message="{Binding Message}" HeaderTitle="{Binding Title}"
+                         FlowDirection="MatchParent" Style="{StaticResource PopupGeneral}"
+                         IsOpen="{Binding IsOpen}"  AppearanceMode="TwoButton"
+                          AcceptCommand="{Binding GoToBackAcceptCommand}"
+                         DeclineCommand="{Binding GoToBackDeclineCommand}"/>
+        <sfPopup:SfPopup x:Name="PoputAccept" IsOpen="{Binding IsOpenSuccess}" HeaderTitle="{Binding Title}" Message="{Binding Message}"
+                         AppearanceMode="OneButton" AcceptCommand="{Binding AcceptSuccessCommand}" Style="{StaticResource PopupGeneral}"/>
+    </VerticalStackLayout>
+</ContentPage>

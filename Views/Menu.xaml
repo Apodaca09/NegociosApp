@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Negocios.Menu"
+             xmlns:local="clr-namespace:Negocios"
+             xmlns:models="clr-namespace:Negocios.Models"
+             xmlns:views="clr-namespace:Negocios.Views"
+             xmlns:viewmodels="clr-namespace:Negocios.ViewModels"
+             x:DataType="viewmodels:MenuViewModel"
+             Title="Menu" BackgroundColor="#F21F26">
+    <StackLayout>
+            <Frame BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <Label Text="Platillos y Bebidas" Margin="20,0,0,0" TextColor="White" FontSize="18"
+               FontFamily="Lemon"/>
+            <CollectionView x:Name="collectionView1"
+            x:FieldModifier="public"
+            SelectionMode="Single">
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type models:FlyoutPageItem}">
+                        <models:FlyoutPageItem Title="Agregar"
+                              IconSource="agregar.png"
+                              TargetType="{x:Type views:AddPlatilloView}" />
+                        <models:FlyoutPageItem Title="Consultar"
+                                      IconSource="consulta.png"
+                                      TargetType="{x:Type views:PlatillosManagerView}"/>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:FlyoutPageItem">
+                        <Grid Padding="5,10" Background="#D00707" WidthRequest="300" HorizontalOptions="Start">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="26"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding IconSource}" Margin="30,0,0,0" HeightRequest="30"/>
+                            <Label Grid.Column="1"
+                       Margin="10,0,10,0"
+                       Text="{Binding Title}"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"
+                       FontFamily="Acme"/>
+                            <BoxView Margin="0,45,0,0" HeightRequest="1" WidthRequest="290" HorizontalOptions="Start"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Frame BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <Label Text="Pedidos" FontFamily="Lemon" Margin="20,0,0,0" FontSize="18"/>
+            <CollectionView x:Name="collectionView2"
+            x:FieldModifier="public"
+            SelectionMode="Single">
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type models:FlyoutPageItem}">
+                        <models:FlyoutPageItem Title="Consultar"
+                      IconSource="consulta.png"
+                      TargetType="{x:Type views:LoginView}" />
+                        <models:FlyoutPageItem Title="Todos los pedidos"
+                              IconSource="all.png"
+                              TargetType="{x:Type views:RegisterView}"/>
+                        <models:FlyoutPageItem Title="Reporte"
+                                          IconSource="reporte.png"
+                                          TargetType="{x:Type views:AddPlatilloView}"/>
+                        <models:FlyoutPageItem Title="Ventas"
+                                          IconSource="billete.png"
+                                          TargetType="{x:Type views:AddPlatilloView}"/>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:FlyoutPageItem">
+                        <Grid Padding="5,10" Background="#D00707" WidthRequest="300" HorizontalOptions="Start">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="26"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding IconSource}" Margin="30,0,0,0" HeightRequest="30"/>
+                            <Label Grid.Column="1"
+                        Margin="10,0,10,0"
+                        Text="{Binding Title}"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        FontFamily="Acme"/>
+                            <BoxView Margin="0,45,0,0" HeightRequest="1" WidthRequest="290" HorizontalOptions="Start"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Frame HeightRequest="180" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            <CollectionView x:Name="collectionView3"
+                        x:FieldModifier="public"
+                        SelectionMode="Single">
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type models:FlyoutPageItem}">
+                        <models:FlyoutPageItem Title="Mi perfil"
+                  IconSource="owner.png"
+                  TargetType="{x:Type views:LoginView}" />
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:FlyoutPageItem">
+                        <Grid Padding="5,10" Background="#D00707" WidthRequest="300" HorizontalOptions="Start">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="26"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding IconSource}" Margin="30,0,0,0" HeightRequest="30"/>
+                            <Label Grid.Column="1"
+                         Margin="10,0,10,0"
+                         Text="{Binding Title}"
+                         FontSize="18"
+                         FontAttributes="Bold"
+                         VerticalOptions="Center"
+                         FontFamily="Acme"/>
+                            <BoxView Margin="0,45,0,0" HeightRequest="1" WidthRequest="290" HorizontalOptions="Start"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <HorizontalStackLayout VerticalOptions="End" Margin="0,8,0,0" Background="#D00707">
+                <Image Source="logout.png" WidthRequest="45" HeightRequest="50" Margin="40,0,0,0"/>
+                <Button Text="Cerrar Sesión" WidthRequest="220" CornerRadius="0" Background="Transparent"
+            FontSize="20" FontFamily="Acme" TextColor="White" Padding="0,0,70,0"
+            x:Name="BtnLogout" Command="{Binding LogoutCommand}"/>
+            </HorizontalStackLayout>
+        </StackLayout>
+</ContentPage>

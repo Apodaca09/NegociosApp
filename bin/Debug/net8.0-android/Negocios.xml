@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Negocios</name>
+    </assembly>
+    <members>
+        <member name="T:Negocios.Models.NegocioAttributes">
+            <inheritdoc/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Id">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.id"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.ImagenByte">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.imagenByte"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Usuario">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.usuario"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Contrasena">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.contrasena"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Negocio">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.negocio"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Telefono">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.telefono"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Owner">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.owner"/>
+        </member>
+        <member name="P:Negocios.Models.NegocioAttributes.Direccion">
+            <inheritdoc cref="F:Negocios.Models.NegocioAttributes.direccion"/>
+        </member>
+        <member name="T:Negocios.Models.PlatillosAttributes">
+            <inheritdoc/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Id">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.id"/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Imagen">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.imagen"/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Nombre">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.nombre"/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Descripcion">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.descripcion"/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Precio">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.precio"/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Tipo">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.tipo"/>
+        </member>
+        <member name="P:Negocios.Models.PlatillosAttributes.Negocio">
+            <inheritdoc cref="F:Negocios.Models.PlatillosAttributes.negocio"/>
+        </member>
+        <member name="T:Negocios.ViewModels.AddPlatilloViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.ImageData">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel._imageData"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.Nombre">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel._nombre"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.Descripcion">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel._descripcion"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.Precio">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel._precio"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.Tipo">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel._tipo"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.Title">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel.title"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.Message">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel.message"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.IsOpen">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel.isOpen"/>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.IsOpenCancel">
+            <inheritdoc cref="F:Negocios.ViewModels.AddPlatilloViewModel.isOpenCancel"/>
+        </member>
+        <member name="F:Negocios.ViewModels.AddPlatilloViewModel.getImageCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.AddPlatilloViewModel.GetImageCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.GetImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.AddPlatilloViewModel.GetImage"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.AddPlatilloViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.AddPlatilloViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.AddPlatilloViewModel.Save"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.AddPlatilloViewModel.acceptCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.AddPlatilloViewModel.AcceptCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.AcceptCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.AddPlatilloViewModel.Accept"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.AddPlatilloViewModel.cancelAdvertCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.AddPlatilloViewModel.CancelAdvertCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.CancelAdvertCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.AddPlatilloViewModel.CancelAdvert"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.AddPlatilloViewModel.acceptCancelCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.AddPlatilloViewModel.AcceptCancelCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.AcceptCancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.AddPlatilloViewModel.AcceptCancel"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.AddPlatilloViewModel.declineCancelCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.AddPlatilloViewModel.DeclineCancelCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.AddPlatilloViewModel.DeclineCancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.AddPlatilloViewModel.DeclineCancel"/>.</summary>
+        </member>
+        <member name="T:Negocios.ViewModels.HomeViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:Negocios.ViewModels.HomeViewModel.goToLoginCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.HomeViewModel.GoToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.HomeViewModel.GoToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.HomeViewModel.GoToLogin"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.HomeViewModel.goToRegisterCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.HomeViewModel.GoToRegisterCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.HomeViewModel.GoToRegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.HomeViewModel.GoToRegister"/>.</summary>
+        </member>
+        <member name="T:Negocios.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.Title">
+            <inheritdoc cref="F:Negocios.ViewModels.LoginViewModel.title"/>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.Message">
+            <inheritdoc cref="F:Negocios.ViewModels.LoginViewModel.message"/>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.IsOpen">
+            <inheritdoc cref="F:Negocios.ViewModels.LoginViewModel.isOpen"/>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.Usuario">
+            <inheritdoc cref="F:Negocios.ViewModels.LoginViewModel.usuario"/>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:Negocios.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="F:Negocios.ViewModels.LoginViewModel.acceptSuccessCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.LoginViewModel.AcceptSuccessCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.AcceptSuccessCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.LoginViewModel.AcceptSuccess"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.LoginViewModel.goToBackCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.LoginViewModel.GoToBackCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.GoToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.LoginViewModel.GoToBack"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.LoginViewModel.loginIntentCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.LoginViewModel.LoginIntentCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.LoginViewModel.LoginIntentCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.LoginViewModel.LoginIntent"/>.</summary>
+        </member>
+        <member name="T:Negocios.ViewModels.MenuViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:Negocios.ViewModels.MenuViewModel.logoutCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.MenuViewModel.LogoutCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.MenuViewModel.LogoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.MenuViewModel.Logout"/>.</summary>
+        </member>
+        <member name="T:Negocios.ViewModels.PlatillosManagerViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.Title">
+            <inheritdoc cref="F:Negocios.ViewModels.PlatillosManagerViewModel.title"/>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.Message">
+            <inheritdoc cref="F:Negocios.ViewModels.PlatillosManagerViewModel.message"/>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.IsOpenError">
+            <inheritdoc cref="F:Negocios.ViewModels.PlatillosManagerViewModel.isOpenError"/>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.IsOpen">
+            <inheritdoc cref="F:Negocios.ViewModels.PlatillosManagerViewModel.isOpen"/>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.IsOpenConfirm">
+            <inheritdoc cref="F:Negocios.ViewModels.PlatillosManagerViewModel.isOpenConfirm"/>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.Confirm">
+            <inheritdoc cref="F:Negocios.ViewModels.PlatillosManagerViewModel.confirm"/>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.getProductsCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.GetProductsCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.GetProductsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.GetProducts"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.updateCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.UpdateCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.UpdateCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.Update(Negocios.Models.PlatillosAttributes)"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.Delete(Negocios.Models.PlatillosAttributes)"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.declineDeleteCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.DeclineDeleteCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.DeclineDeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.DeclineDelete"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.acceptDeleteCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.AcceptDeleteCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.AcceptDeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.AcceptDelete"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.getImageCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.GetImageCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.GetImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.GetImage(Negocios.Models.PlatillosAttributes)"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.closeMessageErrorCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.CloseMessageErrorCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.CloseMessageErrorCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.CloseMessageError"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.PlatillosManagerViewModel.closeMessageExitoCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.PlatillosManagerViewModel.CloseMessageExitoCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.PlatillosManagerViewModel.CloseMessageExitoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.PlatillosManagerViewModel.CloseMessageExito"/>.</summary>
+        </member>
+        <member name="T:Negocios.ViewModels.RegisterViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.Title">
+            <inheritdoc cref="F:Negocios.ViewModels.RegisterViewModel.title"/>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.Message">
+            <inheritdoc cref="F:Negocios.ViewModels.RegisterViewModel.message"/>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.IsOpen">
+            <inheritdoc cref="F:Negocios.ViewModels.RegisterViewModel.isOpen"/>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.IsOpenSuccess">
+            <inheritdoc cref="F:Negocios.ViewModels.RegisterViewModel.isOpenSuccess"/>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.Lada">
+            <inheritdoc cref="F:Negocios.ViewModels.RegisterViewModel.lada"/>
+        </member>
+        <member name="F:Negocios.ViewModels.RegisterViewModel.acceptSuccessCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.RegisterViewModel.AcceptSuccessCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.AcceptSuccessCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.RegisterViewModel.AcceptSuccess"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.RegisterViewModel.goToBackCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.RegisterViewModel.GoToBackCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.GoToBackCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.RegisterViewModel.GoToBack"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.RegisterViewModel.goToBackDeclineCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.RegisterViewModel.GoToBackDeclineCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.GoToBackDeclineCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.RegisterViewModel.GoToBackDecline"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.RegisterViewModel.goToBackAcceptCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.RegisterViewModel.GoToBackAcceptCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.GoToBackAcceptCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.RegisterViewModel.GoToBackAccept"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.RegisterViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.RegisterViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.RegisterViewModel.Register"/>.</summary>
+        </member>
+        <member name="F:Negocios.ViewModels.RegisterViewModel.getImageCommand">
+            <summary>The backing field for <see cref="P:Negocios.ViewModels.RegisterViewModel.GetImageCommand"/>.</summary>
+        </member>
+        <member name="P:Negocios.ViewModels.RegisterViewModel.GetImageCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Negocios.ViewModels.RegisterViewModel.GetImage"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImagenByte">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImagenByte" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Contrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Contrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Negocio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Negocio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Telefono">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Telefono" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Owner">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Owner" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Direccion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Direccion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Imagen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Imagen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Descripcion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Descripcion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Precio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Precio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Tipo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Tipo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImageData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImageData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Message">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Message" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsOpenCancel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsOpenCancel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsOpenError">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsOpenError" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsOpenConfirm">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsOpenConfirm" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Confirm">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Confirm" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsOpenSuccess">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsOpenSuccess" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Lada">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Lada" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImagenByte">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImagenByte" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Contrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Contrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Negocio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Negocio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Telefono">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Telefono" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Owner">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Owner" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Direccion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Direccion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Imagen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Imagen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Descripcion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Descripcion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Precio">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Precio" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Tipo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Tipo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImageData">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImageData" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Title">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Title" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Message">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Message" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsOpenCancel">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsOpenCancel" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsOpenError">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsOpenError" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsOpenConfirm">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsOpenConfirm" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Confirm">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Confirm" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsOpenSuccess">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsOpenSuccess" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Lada">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Lada" generated properties.</summary>
+        </member>
+    </members>
+</doc>

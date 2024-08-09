@@ -1,0 +1,32 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Negocios"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             x:Class="Negocios.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="PopupGeneral" TargetType="sfPopup:SfPopup">
+                <Setter Property="ShowHeader" Value="True"/>
+                <Setter Property="ShowFooter" Value="True"/>
+                <Setter Property="FooterHeight" Value="110"/>
+                <Setter Property="HeaderHeight" Value="80"/>
+                <Setter Property="AcceptButtonText" Value="Aceptar"/>
+                <Setter Property="DeclineButtonText" Value="Cancelar"/>
+                <Setter Property="AnimationDuration" Value="150"/>
+                <Setter Property="AnimationMode" Value="Zoom"/>
+                <Setter Property="PopupStyle">
+                    <sfPopup:PopupStyle PopupBackground="White" AcceptButtonBackground="Green" HeaderTextAlignment="Center"
+                        AcceptButtonTextColor="White" Stroke="Gray" StrokeThickness="2" HeaderFontAttribute="Bold" HeaderFontSize="20"
+                        HeaderFontFamily="Acme" CornerRadius="30" MessageFontSize="15" HasShadow="True" MessageTextColor="Black"
+                        MessageFontFamily="Acme" DeclineButtonBackground="Red" DeclineButtonTextColor="White" FooterFontSize="18"
+                        MessageTextAlignment="Center"/>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

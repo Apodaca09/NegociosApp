@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:editors="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             xmlns:sfPopup="clr-namespace:Syncfusion.Maui.Popup;assembly=Syncfusion.Maui.Popup"
+             x:Class="Negocios.Views.AddPlatilloView"
+             xmlns:converters="clr-namespace:Negocios.Converters"
+             xmlns:viewmodel="clr-namespace:Negocios.ViewModels"
+             x:DataType="viewmodel:AddPlatilloViewModel"
+             Title="Agregar ⟩ Platillo / Bebida" Background="White">
+    <VerticalStackLayout>
+        <Frame BackgroundColor="#D6CECE" Margin="0,20,0,0" BorderColor="Transparent"
+        CornerRadius="0" HeightRequest="40">
+            <Label FontSize="18" FontAttributes="Bold" FontFamily="Acme"
+            TextColor="Black"  HeightRequest="20" Text="{Binding Nombre}"/>
+        </Frame>
+        <ImageButton Background="#EBC83A" Margin="70,30,70,20" HeightRequest="150" WidthRequest="200" Aspect="AspectFill"
+              Source="{Binding ImageData, Converter={converters:ImageArrayToImageSourceProductsConverter}}" CornerRadius="15"
+              Command="{Binding GetImageCommand}" x:Name="BtnImagen"/>
+        <Label Text="Elige un tipo" TextColor="Black" FontFamily="Acme"
+        FontSize="20" Margin="70,0,0,0"/>
+        <editors:SfComboBox Margin="70,5,70,5" IsClearButtonVisible="False" ItemsSource="{Binding Tipos}" SelectedItem="{Binding Tipo}"
+                     FontAttributes="Bold" FontFamily="Acme" FontSize="16" x:Name="CmbTipos" Text="Platillo"/>
+        <Label Text="Nombre" TextColor="Black" FontFamily="Acme"
+FontSize="20" Margin="70,0,0,0"/>
+        <Frame  Margin="70,5,70,5" HeightRequest="35" HasShadow="True" BorderColor="Transparent">
+            <Entry BackgroundColor="#D6CECE" WidthRequest="240" x:Name="EntryNombre" Text="{Binding Nombre}"
+            TextColor="Black" HeightRequest="40" Margin="20,0,0,0" FontAttributes="Bold" FontFamily="Acme" FontSize="18"/>
+        </Frame>
+        <Label Text="Descripción" TextColor="Black" FontFamily="Acme"
+ FontSize="20" Margin="70,0,0,0"/>
+        <Frame  Margin="70,5,70,5" HeightRequest="35" HasShadow="True" BorderColor="Transparent">
+            <Entry BackgroundColor="#D6CECE" HeightRequest="40" WidthRequest="240" x:Name="EntryDescripcion" 
+            Margin="20,0,0,0" FontAttributes="Bold" FontFamily="Acme" FontSize="18" TextColor="Black" Text="{Binding Descripcion}"/>
+        </Frame>
+        <Label Text="Precio" TextColor="Black" FontFamily="Acme"
+ FontSize="20" Margin="70,0,0,0"/>
+        <Frame  Margin="70,0,70,0" HeightRequest="40" HasShadow="True" BorderColor="Transparent">
+            <editors:SfNumericEntry CustomFormat="C2" TextColor="Black" BackgroundColor="#D6CECE" HeightRequest="40"
+                             WidthRequest="240" Value="{Binding Precio, Mode=TwoWay}" FontFamily="Acme" Margin="20,0,0,0" FontSize="18"
+                             x:Name="syncNePrecio"/>
+        </Frame>
+        <HorizontalStackLayout HorizontalOptions="Center" >
+            <Button BackgroundColor="Black" Text="Agregar" WidthRequest="120" Margin="0,10,10,0"
+             TextColor="White" Command="{Binding SaveCommand}"/>
+            <Button BackgroundColor="Black" Text="Cancelar" WidthRequest="120" Margin="0,10,10,0"
+             TextColor="White" x:Name="BtnCancelar" Command="{Binding CancelAdvertCommand}"/>
+        </HorizontalStackLayout>
+        <Frame BackgroundColor="#D6CECE" Margin="0,20,0,0" BorderColor="Transparent"
+CornerRadius="0" HeightRequest="40"/>
+        <sfPopup:SfPopup x:Name="Normal" IsOpen="{Binding IsOpen}" AppearanceMode="OneButton" HeaderTitle="{Binding Title}"
+                         AcceptCommand="{Binding AcceptCommand}" Message="{Binding Message}" Style="{StaticResource PopupGeneral}"/>
+        <sfPopup:SfPopup x:Name="cancel" IsOpen="{Binding IsOpenCancel}" AppearanceMode="TwoButton" HeaderTitle="{Binding Title}"
+                         Message="{Binding Message}" AcceptCommand="{Binding AcceptCancelCommand}"
+                         DeclineCommand="{Binding DeclineCancelCommand}" Style="{StaticResource PopupGeneral}"/>
+    </VerticalStackLayout> 
+</ContentPage>
